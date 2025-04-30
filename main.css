@@ -1,0 +1,23 @@
+.menu_ngang{
+    background-color: aquamarine;
+    list-style: none;
+    min-height: 30px;
+    display: flex;
+}
+
+.menu_ngang li{
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.menu_ngang li a{
+    text-decoration: none;
+}
+
+.menu_ngang li a:hover{
+    color: aliceblue;
+    border-radius: 5px;
+    background-color: orange;
+    list-style: none;
+    font-style: italic;
+}
