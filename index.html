@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="main.css" />
     <title>Gundam World</title>
   </head>
+
   <body>
-                     
-  <header>
+    <header>
     <div class="container">
       <ul>
       <li class="logo">
@@ -19,30 +19,186 @@
         <input type="text" placeholder="Bạn đang cần tìm gì....">
         <i class="fas fa-search"></i>
       </li>  
-       <li><button><i class="fas fa-phone"></i>HotLine 0775932188</button></li>
+       <li><button><i class="fas fa-phone"></i>Hotline<br><strong>0775932188</strong></button></li>
        <li><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></li>
        <li><button><i class="fas fa-user"></i>Đăng nhập</button></li>
-     </ul>
+      </ul> 
+    </div>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </header>            
     
+  <!--Menu-->
   <nav>
     <div class="menu">
-      <ul>
+      <ul id="menu">
          <li><a href="">Trang chủ</a></li>
           <li><a href="">Giới thiệu</a></li>
           <li><a href="">Sản phẩm</a></li>
           <li><a href="">Dịch vụ</a></li>
-          <li><a href="">Liên hệ</a></li>
+          <li><a href="">Lab Thực Hành</a></li>
           </ul>
       </div>
-     </nav> 
-     <img src="image/02card_7uAAUyyCe0AGN4_SWPQSMGLmKO6ZTzNC_O3cyVJ6fBc1COcAm8HY1RiqZfGTreT5C.jpg" alt="" width="100%" height="450" />
-    
+  </nav> 
 
+  <!--Slider-->
+  <div class="slider">
+    <div class="list">
+      <div class="item">
+        <img src="image/02card_7uAAUyyCe0AGN4_SWPQSMGLmKO6ZTzNC_O3cyVJ6fBc1COcAm8HY1RiqZfGTreT5C.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="image/51967420577_6f6b2e9328_o.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="image/Gunpla-RX-78-2-History.png" alt="">
+      </div>
+      <div class="item">
+        <img src="image/mgexSFG_1200x720_20220622.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="image/Mobile-Suit-Gundam-GQuuuuuuX-Beginning-recensione-nerdevil-678x381.webp" alt="">
+      </div>
+      <div class="item">
+        <img src="image/wyyKu-s4ORK8Gzu2FjZAjMChxac7KjU9mwmjvHb7EUQ.webp" alt="">
+      </div>
+    </div>
+ </div>
 
+  <!-- button prev and next -->
+  <div class="buttons">
+    <button id="prev"><</button>
+    <button id="next">></button>
+  </div>
 
+  <!-- dots -->
+  <ul class="dots">
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  
+  <div class="content">
+    <div class="sanphamnoibat">
+      <h2>Sản phẩm nổi bật</h2>
+        <div class="gundam_grid">
+          <div class="gundam_item">
+            <img src="imageItems/52475929976_d635c985fe_o.jpg" alt="">
+            <div class="gundam_info">
+              <h3>MG 1/100 MGEX Strike Freedom</h3>
+              <p class="price">3.500.000₫</p>
+            </div>
+          </div>
+          <div class="gundam_item">
+            <img src="imageItems/BAS2677953BandaiHGGundamBuildMetaversePlutineGundamModelKit457310265721306.webp" alt="">
+            <div class="gundam_info">
+              <h3>HG 1/144 Plutine Gundam</h3>
+              <p class="price">600.000₫</p>
+            </div>
+          </div>
+          <div class="gundam_item">
+            <img src="imageItems/E8_TdYEWYAQo7iM.jpg" alt="">
+            <div class="gundam_info">
+              <h3>MG 1/100 Eclipse Gundam</h3>
+              <p class="price">1.200.000₫</p>
+            </div>
+          </div>
+          <div class="gundam_item">
+            <img src="imageItems/hg gundam aerial box art.webp" alt="">
+            <div class="gundam_info">
+              <h3>HG 1/144 Aerial Gundam</h3>
+              <p class="price">500.000₫</p>
+            </div>
+          </div>
+          <div class="gundam_item">
+            <img src="imageItems/images.jpg" alt="">
+            <div class="gundam_info">
+              <h3>RG 1/144 RX-78-2 Gundam 2.0</h3>
+              <p class="price">700.000₫</p>
+            </div>
+          </div>
+          <div class="gundam_item">
+            <img src="imageItems/wmo0o7pw2o7a1.jpg" alt="">
+            <div class="gundam_info">
+              <h3>MGSD Strike Freedom</h3>
+              <p class="price">1.500.000₫</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
 
-    </header>
+  <!--Footer-->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <!-- Logo & Mô tả -->
+          <div class="footer-column">
+            <div class="footer-single-widget">
+              <div class="widget-title">
+                <div class="footer-logo">
+                  <a href="#">
+                    <img src="./image/pngfind.com-gundam-head-png-4840508.png" alt="logo">
+                  </a>
+                </div>
+              </div>
+              <div class="widget-body">
+                <p>
+                  <strong>Gundam World</strong> – Chuỗi cửa hàng chuyên cung cấp các mẫu mô hình chính hãng đến từ nhật bản
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thông tin liên hệ -->
+          <div class="footer-column">
+            <div class="footer-single-widget">
+              <div class="widget-title">Thông tin</div>
+              <div class="widget-body">
+                <ul class="contact-list">
+                  <li><strong>Địa chỉ:</strong> 180 Cao Lỗ, Phường 4, Quận 8, TP.HCM</li>
+                  <li><strong>Email:</strong> DH52200670@student.stu.edu.vn</li>
+                  <li><strong>Điện thoại:</strong> 0775932188</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bản đồ -->
+          <div class="footer-column">
+            <div class="footer-single-widget">
+              <div class="widget-title">Bản đồ</div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6592.4985499755685!2d106.6789931371774!3d10.74041089759156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1714125058390!5m2!1svi!2s"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="footer-bottom">
+      Họ và tên: Bành Kim Hiếu | MSSV: DH52200670 | Lớp: D22_TH02 | Nhóm 4 Thứ 2 Ca 1
+    </h3>
+  </footer>
+
+   <script src="main.js"></script>
+
+   <script>
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+</script>
   </body>
 </html>
