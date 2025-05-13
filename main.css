@@ -27,6 +27,13 @@ a {
 header {
   text-align: center;
   background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 header ul {
@@ -35,6 +42,12 @@ header ul {
   align-items: center;
   flex-wrap: wrap;
   padding: 10px 0;
+}
+
+.header li {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
 }
 
 header .logo img {
@@ -55,6 +68,7 @@ header .search input {
   padding-left: 15px;
   border: 1px solid #ccc;
   outline: none;
+  padding: 8px 12px;
 }
 
 header .search i {
@@ -89,6 +103,15 @@ header button:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: white;
+  }
+
+
+
   header ul {
     flex-direction: column;
     align-items: stretch;
@@ -97,11 +120,24 @@ header button:hover {
 
   header .search {
     margin: 0;
+    width: 100%;
   }
 
+  .header .search input {
+    width: 100%;
+  }
+  
   header button {
     width: 100%;
     margin-left: 0;
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .header img {
+    max-width: 150px;
+    height: auto;
   }
 
   .menu ul {
@@ -112,6 +148,8 @@ header button:hover {
   .menu li {
     width: 100%;
     text-align: center;
+    margin: 10px 0;
+    justify-content: flex-start;
   }
 
   .menu li a {
