@@ -138,6 +138,11 @@ nav {
   padding: 10px 0;
 }
 
+.menu li {
+  position: relative;
+}
+
+
 .menu li a {
   padding: 14px 20px;
   display: block;
@@ -146,9 +151,85 @@ nav {
   transition: 0.3s;
 }
 
+.menu li a i {
+  margin-left: 6px;
+  font-size: 18px; /* Kích thước mũi tên */
+  color: white;
+}
+
 .menu li a:hover {
   background-color: rgb(42, 114, 154);
   border-radius: 5px;
+}
+
+.dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px); /* Trượt xuống 10px */
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.arrow {
+  margin-left: 5px;
+  font-size: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Quay mũi tên lên khi hover vào menu cha */
+#menu li:hover .arrow {
+  transform: rotate(180deg);
+}
+
+/* Hiển thị dropdown khi hover vào mục cha */
+.menu li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); 
+}
+
+/* Các mục con trong dropdown */
+.dropdown li {
+  padding: 10px 20px;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  position: relative;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown li:hover {
+  background-color: #f2f2f2;
+  color: #2a729a;
+  transform: translateX(5px); 
+}
+
+.dropdown li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #2a729a;
+  transition: width 0.3s ease;
+}
+
+.dropdown li a:hover::after {
+  width: 100%; /* Tạo gạch chân chạy ngang */
 }
 
 .hamburger {
@@ -312,35 +393,6 @@ nav {
   border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-  .buttons button {
-    width: 35px;
-    height: 35px;
-    font-size: 18px;
-  }
-
-  .dots li {
-    width: 6px;
-    height: 6px;
-  }
-
-  .dots li.active {
-    width: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .buttons button {
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
-  }
-
-  .dots {
-    bottom: 5px;
-  }
-}
-
 .content {
   padding: 40px 20px;
   background-color: #f9f9f9;
@@ -357,6 +409,20 @@ nav {
   font-size: 32px;
   margin-bottom: 30px;
   color: #222;
+}
+
+.sanphamnoibat p{
+  font-size: 27px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.sanphamnoibat .select_title {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
 }
 
 .gundam_grid {
@@ -418,16 +484,26 @@ nav {
   padding: 0 15px;
 }
 
-.footer .row {
+.footer-top .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   justify-content: space-between;
 }
 
-.footer-column {
-  flex: 1 1 30%;
-  min-width: 250px;
+.footer-column.map-column {
+  flex: 0 0 100%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.footer-column.map-column iframe {
+  width: 100%;
+  display: block;
+}
+
+.footer-single-widget {
+  padding: 10px;
 }
 
 .footer-logo img {
@@ -463,4 +539,14 @@ nav {
   color: #ffffff;
   padding: 20px 0;
   font-size: 19px;
+}
+
+@media (max-width: 768px) {
+  .footer-column {
+    flex: 1 1 100%;
+  }
+
+  .footer-column.map-column {
+    margin-top: 20px;
+  }
 }
