@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css" />
+    <title>Gundam World</title>
+  </head>
+
+  <body>
+    <button id="backToTop" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button>
+    <header>
+    <div class="container">
+      <ul>
+        <!-- Hamburger Icon -->
+      <li class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </li>
+      <li class="logo">
+        <a href="index.html"><img style="width: 200px" src="image/pngfind.com-gundam-head-png-4840508.png"/></a></li>
+      <li class="search">
+        <input type="text" placeholder="Bạn đang cần tìm gì....">
+        <i class="fas fa-search"></i>
+      </li>  
+      
+       <li><button><i class="fas fa-phone"></i>Hotline<br><strong>0775932188</strong></button></li>
+       <li><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></li>
+       <li><button><i class="fas fa-user"></i>Đăng nhập</button></li>
+      </ul> 
+    </div>
+  </header>            
+    
+  <!--Menu-->
+  <nav>
+    <div class="menu">
+      <ul id="menu">
+         <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li class="has-dropdown"><a href="#">Sản phẩm<i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="HG.HTML">HIGH GRADE</a></li> 
+              <li><a href="RG.HTML">REAL GRADE</a></li>
+              <li><a href="MG.HTML">MASTER GRADE</a></li>
+            </ul>
+          </li>
+          <li><a href="dichvu.html">Dịch vụ</a></li>
+          <li><a href="lab.html">Lab Thực Hành</a></li>
+          </ul>
+      </div>
+  </nav>
+
+
+<div class="container">
+  <div class="about-content">
+      <div class="about-image">
+          <img src="image/Q5iCLT8EXAXjwvoQ5WihujuPgPzD2l2m0Hepib3vclUt8X8cRyfGnNta9akXmEFB_BntYKgT5b9k7rE1EZOwWQ.webp" alt="BOTGYM Team">
+      </div>
+      <div class="about-text">
+          <h2>Sơ lược về Gunpla</h2>
+          <p>Gunpla là viết tắt của "Gundam Plastic Model", tức là mô hình nhựa của các Mobile Suit (robot chiến đấu) và phương tiện trong vũ trụ Gundam – một trong những thương hiệu anime nổi tiếng và lâu đời nhất của Nhật Bản.
+             Từ “Gunpla” không chỉ dùng để gọi mô hình, mà còn đề cập đến cả quá trình lắp ráp, sưu tầm và độ chế các mô hình này. 
+             Đây là một thú vui phổ biến, không chỉ ở Nhật mà còn ở khắp thế giới.</p>
+          <p>Mang đến những trải nghiệm thú vị và độc đáo đến với tất cả mọi người, Gundam World là đơn vị đồng hành với các đơn vị chuyên cung cấp các loại mô hình chính hăng 
+            đến từ Nhật Bản từ đó quý khách sẽ không cần phải lo ngại chất lượng của sản phẩm cũng như giá thành cạnh tranh.</p>
+          <p>Ngoài ra, chúng tôi còn tạo ra một sân chơi cho các bạn muốn thử sức tự tay sáng chế ra mình những mẫu mô hình đặc trưng của riêng mình và mong muốn
+            viết lên cho mình về hành trình trở thành một Builder chuyên nghiệp.</p>
+          <h2>Các chức năng đã thực hiện </h2>
+          <ul>
+              <li>- Logo: Hiển thị hình ảnh logo Gundam.</li>
+              <li>- Thanh tìm kiếm: Input cho phép người dùng nhập từ khóa để tìm kiếm.</li>
+              <li>- Hotline, giỏ hàng, đăng nhập: Các nút có icon sử dụng Font Awesome.</li>
+              <li>- Responsive menu: Sử dụng hamburger menu để hiển thị menu trên mobile.</li>
+              <li>- Dùng JS để làm thanh trượt hình ảnh.</li>
+
+              <li>- Hiệu ứng hover sản phẩm.</li>
+              <li>- Các liên kết: Trang chủ, Giới thiệu, Sản phẩm (có dropdown), Dịch vụ, Lab Thực Hành</li>
+              <li>- Dropdown menu (Sản phẩm): Hiển thị ba loại mô hình: HIGH GRADE, REAL GRADE, MASTER GRADE. Dropdown này được hiển thị bằng hover trên PC và click trên mobile (responsive JS).</li>
+
+              <li>- Thông tin mô tả: Mô tả về Gundam World.</li>
+              <li>- Liên kết chính sách: Điều khoản, chính sách bảo mật, v.v.</li>
+              <li>- Thông tin liên hệ: Địa chỉ, email, số điện thoại.</li>
+              <li>- Google Map nhúng: Hiển thị vị trí cửa hàng.</li>
+              <li>- Thông tin cá nhân: Tên, MSSV, lớp và nhóm học.</li>
+
+              <li>- Hover dropdown: Menu sản phẩm hiện ra mượt khi rê chuột.</li>
+              <li>- Hiệu ứng gạch chân khi hover các liên kết.</li>
+              <li>- Chuyển màu và scale nhẹ khi hover vào card (nếu có phần sản phẩm).</li>
+              <li>- Responsive giao diện: Thay đổi hiển thị theo kích thước màn hình. Hiển thị hamburger menu khi màn hình nhỏ.</li>
+
+              <li>- Font Awesome: Sử dụng icon từ fontawesome (CDN link).</li>
+              <li>- Google Maps Embed API: Nhúng bản đồ vào trang.</li>
+              <li>- JavaScript thuần (Vanilla JS): Xử lý toggle menu và dropdown trên mobile.</li>
+              <li>- Sử dụng video nhúng iframe.</li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <!-- Logo & Mô tả -->
+          <div class="footer-column">
+            <div class="footer-single-widget">
+              <div class="widget-title">
+                <div class="footer-logo">
+                  <a href="#">
+                    <img src="./image/pngfind.com-gundam-head-png-4840508.png" alt="logo">
+                  </a>
+                </div>
+              </div>
+              <div class="widget-body">
+                <p>
+                  <strong>Gundam World</strong> – Chuỗi cửa hàng chuyên cung cấp các mẫu mô hình chính hãng đến từ nhật bản
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thông tin liên hệ -->
+          <div class="footer-column">
+            <div class="footer-single-widget">
+              <div class="widget-title">Thông tin</div>
+              <div class="widget-body">
+                <ul class="contact-list">
+                  <li><a href=""><strong>Điều khoản chung</strong></a></li>
+                  <li><a href=""><strong>Điều khoản giao dịch</strong></a></li>
+                  <li><a href=""><strong>Chính sách thanh toán</strong></a></li>
+                  <li><a href=""><strong>Chính sách bảo mật</strong></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <div class="footer-single-widget">
+              <div class="widget-title">Điều khoản sử dụng</div>
+              <div class="widget-body">
+                <ul class="contact-list">
+                  <li><strong>Địa chỉ:</strong> 180 Cao Lỗ, Phường 4, Quận 8, TP.HCM</li>
+                  <li><strong>Email:</strong> DH52200670@student.stu.edu.vn</li>
+                  <li><strong>Điện thoại:</strong> 0775932188</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bản đồ -->
+          <div class="footer-column">
+            <div class="footer-single-widget">
+              <div class="widget-title">Bản đồ</div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6592.4985499755685!2d106.6789931371774!3d10.74041089759156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1714125058390!5m2!1svi!2s"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="footer-bottom">
+      Họ và tên: Bành Kim Hiếu | MSSV: DH52200670 | Lớp: D22_TH02 | Nhóm 4 Thứ 2 Ca 1
+    </h3>
+  </footer>
+
+<script src="main.js"></script>
+<script>
+  // Toggle menu (hamburger)
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+
+  // Toggle dropdown (mobile only)
+  document.querySelectorAll('.has-dropdown > a').forEach(menuItem => {
+    menuItem.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        const parent = this.parentElement;
+        parent.classList.toggle('open');
+      }
+    });
+  });
+</script>
+  </body>
+</html>
