@@ -696,11 +696,11 @@ nav {
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 40%;
   height: 0;
   overflow: hidden;
   width: 100%;
-  max-width: 900px;
+  max-width: 1500px;
   margin: 0 auto;   
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -739,7 +739,7 @@ nav {
 }
 
 .about-image img {
-  max-width: 100%;
+  width: 500px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
