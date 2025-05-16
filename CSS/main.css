@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -730,7 +729,6 @@ nav {
 }
 
 
-/* Base styles */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -741,12 +739,13 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .about-image img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -792,11 +791,16 @@ nav {
 
   .about-text h2 {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .about-text p,
   .about-text li {
     font-size: 1rem;
+  }
+
+  .about-image img {
+    max-width: 100%;
   }
 }
 
